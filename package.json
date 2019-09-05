@@ -1,7 +1,7 @@
 {
   "name": "@stoutlabs/gatsby-theme-stoutlabs-starter-blog",
   "description": "A Gatsby theme based on my own opinionated starter/configuration. This is a functional WIP!",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
   "author": "Daniel Stout | daniel@stoutlabs.com | @stoutlabs",
