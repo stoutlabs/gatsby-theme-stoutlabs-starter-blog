@@ -7,7 +7,11 @@ import BlogShareButtons from "./BlogShareButtons";
 import Content from "./Content";
 import PrevNext from "./PrevNext";
 
-import { StyledFeatured, StyledPostContainer, BackToList } from "../../styles/stoutlabs-blog-styles";
+import {
+  StyledFeatured,
+  StyledPostContainer,
+  BackToList
+} from "../../styles/stoutlabs-blog-styles";
 
 const Post = ({
   content,
@@ -24,7 +28,8 @@ const Post = ({
   slug,
   allNode,
   shareImg,
-  basePath = "/blog"
+  basePath = "/blog",
+  siteUrl
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -39,7 +44,7 @@ const Post = ({
             {timetoread > 1 ? "s" : ""}
           </span>
         </p>
-        
+
         {featureimg && (
           <StyledFeatured>
             <Img fluid={featureimg.childImageSharp.fluid} />
@@ -48,7 +53,14 @@ const Post = ({
 
         <PostContent content={content} className="post-content" />
 
-        <BlogShareButtons postPath={slug} postNode={allNode} mobile={false} shareImg={shareImg} />
+        <BlogShareButtons
+          postPath={slug}
+          postNode={allNode}
+          mobile={false}
+          shareImg={shareImg}
+          basePah={basePath}
+          siteUrl={siteUrl}
+        />
       </StyledPostContainer>
 
       <div className="container">

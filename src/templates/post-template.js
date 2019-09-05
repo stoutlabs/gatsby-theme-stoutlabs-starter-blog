@@ -35,6 +35,7 @@ const PostTemplate = ({ data, pageContext }) => {
         allNode={post}
         shareImg={post.frontmatter.featureimg.childImageSharp.fluid.src}
         basePath={pageContext.basePath}
+        siteUrl={data.site.siteMetadata.siteUrl}
       />
     </Layout>
   );
