@@ -10,6 +10,7 @@ exports.onPreBootstrap = ({ store, reporter }, options) => {
   const contentPath = options.contentPath || "blog"
   const dirs = [
     path.join(program.directory, `src/${contentPath}`),
+    path.join(program.directory, `src/styles`),
     path.join(program.directory, "src/images"),
     path.join(program.directory, "src/pages")
   ];

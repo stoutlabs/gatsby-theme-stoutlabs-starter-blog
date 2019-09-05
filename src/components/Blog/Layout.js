@@ -9,7 +9,7 @@ import { StyledWrapper } from "../../styles/stoutlabs-blog-styles";
 const Layout = ({ children, pageInfo }) => (
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
+      query BlogLayoutQuery {
         site {
           siteMetadata {
             title

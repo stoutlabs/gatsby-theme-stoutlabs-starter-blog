@@ -58,7 +58,7 @@ const Post = ({
           postNode={allNode}
           mobile={false}
           shareImg={shareImg}
-          basePah={basePath}
+          basePath={basePath}
           siteUrl={siteUrl}
         />
       </StyledPostContainer>
