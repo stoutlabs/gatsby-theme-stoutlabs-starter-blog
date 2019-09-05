@@ -31,27 +31,28 @@ module.exports = ({
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
-        path: path.join(__dirname, `src`, `pages`)
+        path: path.join(`src`, `pages`)
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
+        path: path.join("src", "images")
+        // path: `${__dirname}/src/images`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `styles`,
-        path: `${__dirname}/src/styles`
+        path: path.join("src", "styles")
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/${contentPath}`,
+        path: `src/${contentPath}`,
         name: `blog`
       }
     },
